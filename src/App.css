@@ -1,0 +1,169 @@
+/* Estilos generales */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  font-family: 'Arial', sans-serif;
+  background-color: #eaeaea; /* Fondo más claro */
+  color: #222; /* Texto más oscuro */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  width: 100vw; /* Ocupa todo el ancho de la pantalla */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #3b82f6; /* Azul más oscuro */
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between; /* Opciones a la derecha */
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-options {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link {
+  color: #ffffff; /* Blanco para mayor contraste */
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1rem;
+}
+
+.navbar-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-button {
+  background-color: #ef4444; /* Rojo más vibrante */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.navbar-button:hover {
+  background-color: #dc2626; /* Rojo más oscuro al pasar el mouse */
+}
+
+/* Contenedor principal */
+.content-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  height: calc(100vh - 64px); /* Resta la altura del navbar */
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #f7f7f7; /* Gris más claro */
+  width: 250px;
+  padding: 1rem;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar p {
+  margin: 0;
+  padding: 0.5rem 0;
+  font-weight: bold;
+}
+
+/* Contenido principal */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* Blanco */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow-y: auto; /* Permite scroll si el contenido es muy grande */
+  color: #222; /* Texto más oscuro */
+}
+
+/* Formularios */
+.form-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff; /* Blanco */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.form-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #333; /* Texto oscuro */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.form-label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #555; /* Texto gris */
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.form-error {
+  color: #e74c3c; /* Rojo suave */
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.form-button {
+  background-color: #4a90e2; /* Azul suave */
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #357ab8;
+}
