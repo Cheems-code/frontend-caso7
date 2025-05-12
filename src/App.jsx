@@ -1,12 +1,11 @@
 // frontend/src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
-import Navbar from './components/Navbar';
+import Navbar from './components/NavBar'; // Corregido
 import Register from './pages/Register';
 import Login from './pages/Login';
 import Home from './pages/Home';
 import AdminDashboard from './pages/AdminDashboard';
-//import ModeratorDashboard from './pages/ModeratorDashboard';
 import UserDashboard from './pages/UserDashboard';
 import NotFound from './pages/NotFound';
 import ProtectedRoute from './components/ProtectedRoute';
